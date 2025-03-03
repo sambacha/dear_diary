@@ -1,12 +1,9 @@
-# If you’d like to deploy this to GitHub pages, rename this
-# file to `gh-pages.yml` and read the mini-tutorial on
-# https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-github-pages
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
 
 jobs:
@@ -20,9 +17,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Cache npm
         uses: actions/cache@v3
