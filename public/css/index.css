@@ -1,13 +1,14 @@
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-monospace:
+		Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
 :root {
 	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
+	--color-gray-50: #c0c0c0;
 	--color-gray-90: #333;
 
 	--background-color: #fff;
@@ -15,7 +16,7 @@
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link-visited: #17050f;
 
 	--syntax-tab-size: 2;
 }
@@ -23,7 +24,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
+		--color-gray-50: #c0c0c0;
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
@@ -34,7 +35,6 @@
 		--background-color: #15202b;
 	}
 }
-
 
 /* Global stylesheet */
 * {
@@ -72,16 +72,16 @@ body {
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
-img{
-  max-width: 100%;
+img {
+	max-width: 100%;
 }
 img[width][height] {
-  height: auto;
+	height: auto;
 }
 img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
+	width: 100%;
+	height: auto;
+	max-width: none;
 }
 video,
 iframe {
@@ -89,7 +89,7 @@ iframe {
 	height: auto;
 }
 iframe {
-	aspect-ratio: 16/9;
+	aspect-ratio: 16 / 9;
 }
 
 p:last-child {
@@ -276,4 +276,3 @@ header {
 .post-metadata time {
 	margin-right: 1em;
 }
-
